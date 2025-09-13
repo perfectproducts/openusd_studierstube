@@ -11,8 +11,12 @@ theme:
     - content.code.copy
 
 nav:
-  - Home: index.md
-  - About: about.md
+  - Willkommen: index.md
+  - Aufzeichnungen:
+    - 2025-09-12 Einrichtung: aufzeichnungen/2025-09-12-setup.md
+  - Material: material.md
+  - Werkzeuge: tools.md
+  - Über uns: about.md
 
 plugins:
   - search
