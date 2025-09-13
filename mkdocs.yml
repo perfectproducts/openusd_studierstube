@@ -1,0 +1,24 @@
+site_name: OpenUSD Studierstube
+site_description: "Documentation site following the NVIDIA OpenUSD Learning Path"
+
+repo_url: https://github.com/perfectproducts/openusd_studierstube
+repo_name: perfectproducts/openusd_studierstube
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - About: about.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.superfences
