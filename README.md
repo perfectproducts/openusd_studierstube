@@ -22,4 +22,5 @@ Diese Seite dient als euer digitaler Begleiter für die OpenUSD Studierstube:
 Wenn du bei den virtuellen Treffen dabei sein möchtest, kommentiere einfach auf [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7372237621541904384/) mit **"OpenUSD Studierstube"** oder schreib eine [mail](mailto:michael.wagner@synctwin.ai).
 
 ## Bereit für die Zertifizierung?
-    Gemeinsam schaffen wir das! Die OpenUSD Studierstube macht den Einstieg in die Welt von Universal Scene Description (USD) so einfach wie möglich. Hier gehts zur [Zertifizierung](https://www.nvidia.com/en-us/learn/certification/openusd-development-professional/)
+
+Gemeinsam schaffen wir das - hier gehts zur [Zertifizierung](https://www.nvidia.com/en-us/learn/certification/openusd-development-professional/) !
