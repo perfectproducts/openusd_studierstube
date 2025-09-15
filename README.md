@@ -1,30 +1,25 @@
-# MkDocs + GitHub Actions Starter
+# Willkommen zur [OpenUSD Studierstube](https://perfectproducts.github.io/openusd_studierstube/)! 🚀
 
-This repo is a minimal, ready-to-deploy MkDocs site using the **Material** theme and **GitHub Pages**.
+Herzlich willkommen zur [**OpenUSD Studierstube**](https://perfectproducts.github.io/openusd_studierstube/) – eurer virtuellen Lernbegleitung für die [NVIDIA OpenUSD Zertifizierung](https://www.nvidia.com/en-us/learn/certification/openusd-development-professional/)!
 
-## Quick start
+![Studierstube Foto](./docs/assets/images/usd_studierstube.png)
 
-1. Create a new repo on GitHub (private or public).
-2. Download this starter as a ZIP, unzip it, and push the contents to your new repo.
-3. Optional: update `repo_url` and `repo_name` in `mkdocs.yml`.
-4. Go to **Settings ▸ Pages** and ensure the **Build and deployment** source is set to **GitHub Actions**.
-5. Push to `main`. The included workflow will build and publish your site automatically.
-6. After the first deploy, your site will be available at:  
-   `https://<your-user>.github.io/<your-repo>/`
+## Was erwartet euch?
 
-## Local preview
+Jeden **Freitag um 15:00 (CEST)** treffen wir uns in einer kompakten Teams-Session, um gemeinsam den kostenlosen [OpenUSD Learning Path](https://nvidia-omniverse.github.io/LearnOpenUSD/) zu erkunden. Wir nehmen uns pro Termin eine Episode vor, besprechen die wichtigsten Konzepte und beantworten eure Fragen.
 
-```bash
-pip install -r requirements.txt
-mkdocs serve
-```
+## Diese Website begleitet euch dabei
 
-Then open http://127.0.0.1:8000
+Diese Seite dient als euer digitaler Begleiter für die OpenUSD Studierstube:
 
----
+- **📚 Material & Ressourcen**: Zusätzliche Lernmaterialien und Links zum OpenUSD Learning Path
+- **🎥 Aufzeichnungen**: Die Aufzeichnungen unserer virtuellen Treffen zum Nachschauen
+- **❓ FAQ & Fragen**: Häufig gestellte Fragen und Antworten aus unseren Sessions
+- **📝 Notizen**: Zusammenfassungen und wichtige Erkenntnisse aus den Treffen
 
-### Customize the theme
+## Mitmachen ist einfach!
 
-- Start editing `docs/index.md` and `docs/about.md`.
-- Add pages and update the `nav` section in `mkdocs.yml`.
-- See the Material for MkDocs docs for more features.
+Wenn du bei den virtuellen Treffen dabei sein möchtest, kommentiere einfach auf [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7372237621541904384/) mit **"OpenUSD Studierstube"** oder schreib eine [mail](mailto:michael.wagner@synctwin.ai).
+
+!!! success "Bereit für die Zertifizierung?"
+    Gemeinsam schaffen wir das! Die OpenUSD Studierstube macht den Einstieg in die Welt von Universal Scene Description (USD) so einfach wie möglich. Hier gehts zur [Zertifizierung](https://www.nvidia.com/en-us/learn/certification/openusd-development-professional/)
