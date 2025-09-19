@@ -61,10 +61,10 @@ Dann Visual Studio Code neu starten
 
 View->Command Palette -> Create: New Jupyter Notebook
 
+## Lernschritte
 
-
-
-## Wichtige Erkenntnisse
+- [What Is a Stage?](https://nvidia-omniverse.github.io/LearnOpenUSD/stage-setting/stage.html)
+- [Prims](https://nvidia-omniverse.github.io/LearnOpenUSD/stage-setting/prims.html)
 
 ## Hausaufgabe
 
