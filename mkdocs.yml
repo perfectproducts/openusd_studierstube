@@ -13,7 +13,9 @@ theme:
 nav:
   - Willkommen: index.md
   - Aufzeichnungen:
-    - 2025-09-12 Einrichtung: aufzeichnungen/2025-09-12-setup.md
+    - 2025-09-19 Stages: aufzeichnungen/2025-09-19/notes.md
+    - 2025-09-12 Einrichtung: aufzeichnungen/2025-09-12/notes.md
+    
   - Material: material.md
   - Werkzeuge: tools.md
   - Über uns: about.md
