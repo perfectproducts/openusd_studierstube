@@ -9,9 +9,10 @@ Beim ersten Treffen haben wir noch nicht aufgezeichnet, da es hauptsächlich um 
 - **Teilnehmer-Vorstellung**: Kennenlernen der Teilnehmer
 - **Werkzeuge-Einrichtung**: Konfiguration der benötigten Software und Tools
 - **OpenUSD Setup**: Installation und Auspacken der OpenUSD Bibliothek
+
 ## Lernschritte
-    - [What Is OpenUSD](https://nvidia-omniverse.github.io/LearnOpenUSD/what-openusd/index.html)
-    - [What Is a Stage?](https://nvidia-omniverse.github.io/LearnOpenUSD/stage-setting/stage.html)
+- [What Is OpenUSD](https://nvidia-omniverse.github.io/LearnOpenUSD/what-openusd/index.html)
+- [What Is a Stage?](https://nvidia-omniverse.github.io/LearnOpenUSD/stage-setting/stage.html)
 
 
 
