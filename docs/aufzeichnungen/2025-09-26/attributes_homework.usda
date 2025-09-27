@@ -1,0 +1,93 @@
+#usda 1.0
+
+def Xform "World"
+{
+    def Scope "Geometry"
+    {
+        def Xform "GroupTransform_Tree1"
+        {
+            def Sphere "Treetop1"
+            {
+                color3f[] primvars:displayColor = [(0, 1, 0)]
+                double radius = 1.5
+                double3 xformOp:translate = (2, 3, 1)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Cylinder "Treetrunk1"
+            {
+                uniform token axis = "Y"
+                color3f[] primvars:displayColor = [(0.9, 0.1, 0)]
+                double radius = 0.2
+                double3 xformOp:translate = (2, 1, 1)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+        }
+
+        def Xform "GroupTransform_Tree2"
+        {
+            def Sphere "Treetop2"
+            {
+                color3f[] primvars:displayColor = [(0, 1, 0)]
+                double radius = 1.2
+                double3 xformOp:translate = (-2, 3, 1.5)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Cylinder "Treetrunk2"
+            {
+                uniform token axis = "Y"
+                color3f[] primvars:displayColor = [(0.9, 0.1, 0)]
+                double radius = 0.2
+                double3 xformOp:translate = (-2, 1, 1.5)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+        }
+
+        def Xform "GroupTransform_House"
+        {
+            def Cube "House_Building"
+            {
+                color3f[] primvars:displayColor = [(0, 0.2, 0.7)]
+                double3 xformOp:translate = (0, 1, -1)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Mesh "Roof"
+            {
+                int[] faceVertexCounts = [4, 3, 3, 3, 3]
+                int[] faceVertexIndices = [0, 1, 2, 3, 0, 1, 4, 1, 2, 4, 2, 3, 4, 3, 0, 4]
+                rel material:binding = </Looks/RedStrong>
+                point3f[] points = [(-1, 0, -1), (1, 0, -1), (1, 0, 1), (-1, 0, 1), (0, 2, 0)]
+                double3 xformOp:translate = (0, 2, -1)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Cube "Floor"
+            {
+                color3f[] primvars:displayColor = [(0.9, 0.3, 0)]
+                double size = 1
+                float3 xformOp:scale = (8, 0.05, 5)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+    }
+}
+
+def "Looks"
+{
+    def Material "RedStrong"
+    {
+        token outputs:surface.connect = </Looks/RedStrong/Shader.outputs:surface>
+
+        def Shader "Shader"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            color3f inputs:diffuseColor = (1, 0, 0)
+            color3f inputs:emissiveColor = (0.2, 0, 0)
+            token outputs:surface
+        }
+    }
+}
+

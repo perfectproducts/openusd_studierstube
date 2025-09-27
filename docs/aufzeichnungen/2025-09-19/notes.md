@@ -71,3 +71,4 @@ View->Command Palette -> Create: New Jupyter Notebook
 Baue eine USD-Szene in dieser Art mit den Grundelementen zusammen : 
 
 ![Aufgabe](aufgabe.png)
+
