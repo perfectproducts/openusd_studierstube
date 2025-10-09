@@ -24,7 +24,7 @@ Andi hat die Hausaufgabe gelöst - super ! :-)
 
 ## Lernschritte
 
-- [Properties](https://nvidia-omniverse.github.io/LearnOpenUSD/stage-setting/properties/index.html)
+- [Properties](https://docs.nvidia.com/learn-openusd/latest/stage-setting/properties/index.html)
 
 
 ## Hausaufgabe

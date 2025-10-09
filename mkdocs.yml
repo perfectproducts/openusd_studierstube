@@ -13,6 +13,7 @@ theme:
 nav:
   - Willkommen: index.md
   - Aufzeichnungen:
+    - 2025-10-10 Animations: aufzeichnungen/2025-10-10/notes.md
     - 2025-10-03 (Feiertag): https://www.tag-der-deutschen-einheit.de/startseite
     - 2025-09-26 Attributes: aufzeichnungen/2025-09-26/notes.md
     - 2025-09-19 Stages: aufzeichnungen/2025-09-19/notes.md

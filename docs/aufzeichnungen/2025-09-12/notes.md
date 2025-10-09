@@ -11,8 +11,8 @@ Beim ersten Treffen haben wir noch nicht aufgezeichnet, da es hauptsächlich um 
 - **OpenUSD Setup**: Installation und Auspacken der OpenUSD Bibliothek
 
 ## Lernschritte
-- [What Is OpenUSD](https://nvidia-omniverse.github.io/LearnOpenUSD/what-openusd/index.html)
-- [What Is a Stage?](https://nvidia-omniverse.github.io/LearnOpenUSD/stage-setting/stage.html)
+- [What Is OpenUSD](https://docs.nvidia.com/learn-openusd/latest/what-openusd/index.html)
+- [What Is a Stage?](https://docs.nvidia.com/learn-openusd/latest/stage-setting/stage.html)
 
 
 

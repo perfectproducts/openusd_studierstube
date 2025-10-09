@@ -6,7 +6,7 @@ Herzlich willkommen zur **OpenUSD Studierstube** – eurer virtuellen Lernbeglei
 
 ## Was erwartet euch?
 
-Jeden **Freitag um 15:00 (CEST)** treffen wir uns in einer kompakten Teams-Session, um gemeinsam den kostenlosen [OpenUSD Learning Path](https://nvidia-omniverse.github.io/LearnOpenUSD/) zu erkunden. Wir nehmen uns pro Termin eine Episode vor, besprechen die wichtigsten Konzepte und beantworten eure Fragen.
+Jeden **Freitag um 15:00 (CEST)** treffen wir uns in einer kompakten Teams-Session, um gemeinsam den kostenlosen [OpenUSD Learning Path](https://docs.nvidia.com/learn-openusd/latest/index.html) zu erkunden. Wir nehmen uns pro Termin eine Episode vor, besprechen die wichtigsten Konzepte und beantworten eure Fragen.
 
 ## Diese Website begleitet euch dabei
 
