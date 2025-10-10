@@ -33,5 +33,6 @@ Aus [Dokumentation](https://openusd.org/release/api/class_usd_attribute.html#Usd
 
 
 ## Hausaufgabe
+![planets](planets.png)
+[Sonnensystem](https://w21030911.nuwebspace.co.uk/graphics/assessment/)
 
-https://w21030911.nuwebspace.co.uk/graphics/assessment/
