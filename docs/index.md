@@ -1,6 +1,6 @@
 # Willkommen zur OpenUSD Studierstube! 🚀
 
-Herzlich willkommen zur **OpenUSD Studierstube** – eurer virtuellen Lernbegleitung für die [NVIDIA OpenUSD Zertifizierung](https://www.nvidia.com/en-us/learn/certification/openusd-development-professional/)!
+Herzlich willkommen zur **OpenUSD Studierstube** – eurer virtuellen Lernbegleitung durch den [OpenUSD Learning Path](https://docs.nvidia.com/learn-openusd/latest/index.html) für die [NVIDIA OpenUSD Zertifizierung](https://www.nvidia.com/en-us/learn/certification/openusd-development-professional/)!
 
 ![Studierstube Foto](./assets/images/usd_studierstube.png)
 
