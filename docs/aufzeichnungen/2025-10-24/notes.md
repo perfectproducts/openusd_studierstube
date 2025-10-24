@@ -1,8 +1,8 @@
-# 2025-10-17 - Scene Description Blueprints
+# 2025-10-24 - Scene Description Blueprints B
 
 ## Aufzeichnung
 
-[Aufzeichnung]()
+[Aufzeichnung](https://youtu.be/PDhw1xgTWOI)
 
 ## Themen
 
