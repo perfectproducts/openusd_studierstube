@@ -1,17 +1,24 @@
-# 2025-10-17 - 
+# 2025-10-17 - Scene Description Blueprints
 
 ## Aufzeichnung
+
 [Aufzeichnung]()
 
 ## Themen
 
+- Vorstellung Hausaufgabe Andreas & mtw 
 
-## Lernschritte
+- [IsA- / API-Schemas](https://docs.nvidia.com/learn-openusd/latest/scene-description-blueprints/schemas.html)
 
-- [Timecodes/-Samples](https://docs.nvidia.com/learn-openusd/latest/stage-setting/timecodes-timesamples.html)
+- Metadata 
+
+- [Scene Description Blueprints](https://docs.nvidia.com/learn-openusd/latest/scene-description-blueprints/index.html)
+
+  
 
 
 ## Hausaufgabe
-![planets](planets.png)
-[Sonnensystem](https://w21030911.nuwebspace.co.uk/graphics/assessment/)
 
+![image-20251017181259647](aufgabe.png)
+
+Warum werden die vererbten Attribute nicht mit ausgegeben ? 

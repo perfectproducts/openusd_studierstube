@@ -1,7 +1,7 @@
 # 2025-10-10 - 
 
 ## Aufzeichnung
-[Aufzeichnung]()
+[Aufzeichnung](https://youtu.be/OSvjhSUTSYE)
 
 ## Themen
 - Relationship attributes erstellen: 
@@ -15,7 +15,7 @@ Zwischen Attributwerten mit Keyframes wird Linear interpoliert oder der Wert pro
 Aus [Dokumentation](https://openusd.org/release/api/class_usd_attribute.html#Usd_AttributeInterpolation):
 
 
-    
+​    
 >    UsdAttribute supports two interpolation behaviors when retrieving attribute values at times where no value is explicitly authored. The desired behaviormay be specified via UsdStage::SetInterpolationType. That behavior will be used for all calls to UsdAttribute::Get.
 
 >   Note that for attributes with spline value sources, the interpolation behavior is determined by the spline itself, and the interpolation type set on the stage is ignored.
