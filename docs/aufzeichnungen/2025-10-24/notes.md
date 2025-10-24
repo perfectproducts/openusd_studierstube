@@ -6,7 +6,15 @@
 
 ## Themen
 
-[Scene Description Blueprints](https://docs.nvidia.com/learn-openusd/latest/scene-description-blueprints/index.html)
+### Lösungen für Planeten Aufgabe von Andreas:
+
+* [Jupyter Notebook](./Homework2-Solarsystem.ipynb) 
+
+* [USDA Solution](./Animated_Solarsystem.usda)
+
+* [Solar System Textures](https://www.solarsystemscope.com/textures/)
+
+### [Scene Description Blueprints](https://docs.nvidia.com/learn-openusd/latest/scene-description-blueprints/index.html)
 
 - [Schemas Is-A / API](https://docs.nvidia.com/learn-openusd/latest/scene-description-blueprints/schemas.html) 
 
