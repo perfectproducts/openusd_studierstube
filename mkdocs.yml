@@ -13,6 +13,7 @@ theme:
 nav:
   - Willkommen: index.md
   - Aufzeichnungen:
+    - 2025-11-07 Composition Übungen: aufzeichnungen/2025-11-07/notes.md
     - 2025-10-31 Composition Basics: aufzeichnungen/2025-10-31/notes.md
     - 2025-10-24 Scene Blueprints B: aufzeichnungen/2025-10-24/notes.md
     - 2025-10-17 Scene Blueprints A: aufzeichnungen/2025-10-17/notes.md
