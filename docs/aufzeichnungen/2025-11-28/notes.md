@@ -2,7 +2,7 @@
 
 ## Aufzeichnung
 
-[Aufzeichnung]()
+[Aufzeichnung](https://youtu.be/8qtVze1r3Tw)
 
 ## Themen
 
