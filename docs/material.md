@@ -9,6 +9,7 @@
 | Curriculum & Resources for Certification | Offizieller Zertifizierungslehrplan und Ressourcen für OpenUSD Development Professional | [Link](https://www.nvidia.com/en-us/learn/certification/openusd-development-professional/) |
 | OpenUSD in a Weekend | Powerkurs zu OpenUSD - sehr empfehlenswert ! | [Link](https://learn-usd.github.io/) |
 | How to use OpenUSD | Blog Artikel von Mati Codesal |[Link](https://developer.nvidia.com/blog/how-to-use-openusd/)
+| OpenUSD with Omniverse | Web-Book  von Marco Alesiani | [Link](https://omniverseusd.github.io/)
 
 
 ## Entwicklerressourcen

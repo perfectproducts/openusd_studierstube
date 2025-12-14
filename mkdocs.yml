@@ -13,6 +13,7 @@ theme:
 nav:
   - Willkommen: index.md
   - Aufzeichnungen:
+    - 2025-12-12 Use-Cases: aufzeichnungen/2025-12-12/notes.md     
     - 2025-12-05 Scene Traversal: aufzeichnungen/2025-12-05/notes.md     
     - 2025-11-28 Beyond the Basics: aufzeichnungen/2025-11-28/notes.md     
     - 2025-11-07 Composition Übungen: aufzeichnungen/2025-11-07/notes.md
