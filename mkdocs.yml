@@ -13,6 +13,7 @@ theme:
 nav:
   - Willkommen: index.md
   - Aufzeichnungen:
+    - 2025-12-19 References & Special Guest Aaron Luk: aufzeichnungen/2025-12-19/notes.md         
     - 2025-12-12 Use-Cases: aufzeichnungen/2025-12-12/notes.md     
     - 2025-12-05 Scene Traversal: aufzeichnungen/2025-12-05/notes.md     
     - 2025-11-28 Beyond the Basics: aufzeichnungen/2025-11-28/notes.md     
@@ -25,6 +26,7 @@ nav:
     - 2025-09-26 Attributes: aufzeichnungen/2025-09-26/notes.md
     - 2025-09-19 Stages: aufzeichnungen/2025-09-19/notes.md
     - 2025-09-12 Einrichtung: aufzeichnungen/2025-09-12/notes.md
+    
     
   - Material: material.md
   - Werkzeuge: tools.md
