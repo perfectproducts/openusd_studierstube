@@ -2,7 +2,7 @@
 
 ## Michael T. Wagner
 
-<img src="./assets/images/mtw.png" alt="Michael T. Wagner" style="zoom: 50%;" />
+![Michael T. Wagner](./assets/images/mtw_small.png)
 
 **[Michael Wagner](https://www.linkedin.com/in/michael-wagner-64873328/)** is CTO and co-founder off **[ipolog GmbH](https://www.ipolog.ai)** and CEO of its youngest spin-off, **[SyncTwin GmbH](https://www.synctwin.ai)**.
 
