@@ -1,6 +1,6 @@
 # Welcome to the OpenUSD Studierstube! 🚀
 
-Welcome to the **OpenUSD Studierstube** — your virtual learning space for **Universal Scene Description (USD)**.
+Welcome to the **OpenUSD Studierstube** — your virtual learning space for **[Universal Scene Description (OpenUSD)](https://docs.nvidia.com/learn-openusd/latest/what-openusd/index.html)**.
 
 Together, we explore OpenUSD fundamentals and follow the official [**OpenUSD Learning Path**](https://docs.nvidia.com/learn-openusd/latest/index.html), preparing step by step for the [**NVIDIA OpenUSD Certification**](https://www.nvidia.com/en-us/learn/certification/openusd-development-professional/).
 
@@ -42,7 +42,7 @@ If you’d like to participate in the virtual sessions, simply:
 
 You’ll then receive the meeting details.
 
-<img src="C:\_STASH\OpenUsd_Studierstube\docs\assets\images\openusd_certificate_badge.png" alt="openusd_certificate_badge" style="zoom:25%;" />
+![openusd_certificate_badge](C:\_STASH\OpenUsd_Studierstube\docs\assets\images\openusd_certificate_badge_small.png)
 
 !!! success "Ready for the certification?"
 
