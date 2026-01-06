@@ -38,7 +38,7 @@ Everyone is welcome — curiosity matters more than prior knowledge.
 If you’d like to participate in the virtual sessions, simply:
 
 - send an [email](mailto:michael.wagner@synctwin.ai), or
-- comment **“OpenUSD Studierstube”** on this [LinkedIn post](https://www.linkedin.com/feed/update/urn:li:activity:7372237621541904384/)
+- comment **“OpenUSD Studierstube”** on this [LinkedIn post](https://www.linkedin.com/posts/michael-wagner-64873328_openusd-openusd-activity-7414293926477717504-uKqD?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXNntgBX0I_EUxYsKLGxp_RbdABWgS_Tw8)
 
 You’ll then receive the meeting details.
 
