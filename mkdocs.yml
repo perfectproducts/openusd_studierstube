@@ -11,26 +11,28 @@ theme:
     - content.code.copy
 
 nav:
-  - Willkommen: index.md
-  - Aufzeichnungen:
-    - 2025-12-19 References & Special Guest Aaron Luk: aufzeichnungen/2025-12-19/notes.md         
-    - 2025-12-12 Use-Cases: aufzeichnungen/2025-12-12/notes.md     
-    - 2025-12-05 Scene Traversal: aufzeichnungen/2025-12-05/notes.md     
-    - 2025-11-28 Beyond the Basics: aufzeichnungen/2025-11-28/notes.md     
-    - 2025-11-07 Composition Übungen: aufzeichnungen/2025-11-07/notes.md
-    - 2025-10-31 Composition Basics: aufzeichnungen/2025-10-31/notes.md
-    - 2025-10-24 Scene Blueprints B: aufzeichnungen/2025-10-24/notes.md
-    - 2025-10-17 Scene Blueprints A: aufzeichnungen/2025-10-17/notes.md
-    - 2025-10-10 Animations: aufzeichnungen/2025-10-10/notes.md
-    - 2025-10-03 (Feiertag): https://www.tag-der-deutschen-einheit.de/startseite
-    - 2025-09-26 Attributes: aufzeichnungen/2025-09-26/notes.md
-    - 2025-09-19 Stages: aufzeichnungen/2025-09-19/notes.md
-    - 2025-09-12 Einrichtung: aufzeichnungen/2025-09-12/notes.md
+  - Welcome: index.md
+  - Recordings:
+    - 2026-01-09 Kickoff 2026: recordings/2026-01-09/notes.md
+    - 2025-Archive (german):
+      - 2025-12-19 References & Special Guest Aaron Luk: aufzeichnungen/2025-12-19/notes.md         
+      - 2025-12-12 Use-Cases: aufzeichnungen/2025-12-12/notes.md     
+      - 2025-12-05 Scene Traversal: aufzeichnungen/2025-12-05/notes.md     
+      - 2025-11-28 Beyond the Basics: aufzeichnungen/2025-11-28/notes.md     
+      - 2025-11-07 Composition Übungen: aufzeichnungen/2025-11-07/notes.md
+      - 2025-10-31 Composition Basics: aufzeichnungen/2025-10-31/notes.md
+      - 2025-10-24 Scene Blueprints B: aufzeichnungen/2025-10-24/notes.md
+      - 2025-10-17 Scene Blueprints A: aufzeichnungen/2025-10-17/notes.md
+      - 2025-10-10 Animations: aufzeichnungen/2025-10-10/notes.md
+      - 2025-10-03 (Feiertag): https://www.tag-der-deutschen-einheit.de/startseite
+      - 2025-09-26 Attributes: aufzeichnungen/2025-09-26/notes.md
+      - 2025-09-19 Stages: aufzeichnungen/2025-09-19/notes.md
+      - 2025-09-12 Einrichtung: aufzeichnungen/2025-09-12/notes.md
     
     
-  - Material: material.md
-  - Werkzeuge: tools.md
-  - Über uns: about.md
+  - Learning Material: material.md
+  - Tools: tools.md
+  - About us: about.md
 
 plugins:
   - search

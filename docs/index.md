@@ -42,9 +42,13 @@ If you’d like to participate in the virtual sessions, simply:
 
 You’ll then receive the meeting details.
 
+<img src="C:\_STASH\OpenUsd_Studierstube\docs\assets\images\openusd_certificate_badge.png" alt="openusd_certificate_badge" style="zoom:25%;" />
 
 !!! success "Ready for the certification?"
-We’ll get there together! The OpenUSD Studierstube makes it as easy as possible to get started with Universal Scene Description (USD). Head to the [certification](https://www.nvidia.com/en-us/learn/certification/openusd-development-professional/).
+
+We’ll get there together! The OpenUSD Studierstube makes it as easy as possible to get started with Universal Scene Description (USD). 
+
+Head to the [certification](https://www.nvidia.com/en-us/learn/certification/openusd-development-professional/).
 
 
 
@@ -53,5 +57,5 @@ We’ll get there together! The OpenUSD Studierstube makes it as easy as possibl
 “[Studierstube](https://de.wiktionary.org/wiki/Studierstube)” literally means *study room* - a somewhat old-fashioned German word.
 
 The group originally started in 2025 as a German-speaking study circle, and the name stuck.
- Due to growing interest from non-German speakers, we switched to **English in 2026**, while keeping the spirit:
- a focused, friendly space for learning together.
+Due to growing interest from non-German speakers, we switched to **English in 2026**, while keeping the spirit:
+a focused, friendly space for learning together.

@@ -1,14 +1,14 @@
-# Werkzeuge
+# Tools
 
-Diese Seite enthält eine Übersicht der wichtigsten Werkzeuge und Downloads für die Arbeit mit OpenUSD.
+This page contains an overview of the most important tools and downloads for working with OpenUSD.
 
 ## Downloads
 
-| Werkzeug | Beschreibung | Download-Link |
-|----------|--------------|---------------|
-| 7-Zip | Archiver und Entpacker für komprimierte Dateien | [Download](https://www.7-zip.org/download.html) |
-| VS Code | Kostenloser Code-Editor von Microsoft  | [Download](https://code.visualstudio.com/Download) |
-| Cursor IDE | Code-Editor mit KI-Unterstützung auf VSCode Basis | [Download](https://cursor.com/) |
-| Blender | 3D-Modellierungs- und Animationssoftware | [Download](https://www.blender.org/download/) |
+| Tool | Description | Download Link |
+|------|-------------|---------------|
+| 7-Zip | Archiver and extractor for compressed files | [Download](https://www.7-zip.org/download.html) |
+| VS Code | Free code editor from Microsoft  | [Download](https://code.visualstudio.com/Download) |
+| Cursor IDE | Code editor with AI support based on VSCode | [Download](https://cursor.com/) |
+| Blender | 3D modeling and animation software | [Download](https://www.blender.org/download/) |
 | Omniverse KIT | Omniverse Framework SDK  | [Download](https://github.com/NVIDIA-Omniverse/kit-app-template)|
 
