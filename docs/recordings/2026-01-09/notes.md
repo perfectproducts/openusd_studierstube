@@ -2,7 +2,10 @@
 
 ## Recording
 
-[Recording]() - not yet available
+[Recording](https://youtu.be/TiJ9i9qffYs) 
 
 ## Topics
 
+Introduction of the new participants 
+
+[Asset Structure Principles and Content Aggregation — Learn OpenUSD](https://docs.nvidia.com/learn-openusd/latest/asset-structure/index.html)
