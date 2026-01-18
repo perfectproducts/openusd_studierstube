@@ -13,6 +13,7 @@ theme:
 nav:
   - Welcome: index.md
   - Recordings:
+    - 2026-01-16 Asset Structure Principles: recordings/2026-01-16/notes.md
     - 2026-01-09 Kickoff 2026: recordings/2026-01-09/notes.md
     - 2025-Archive (german):
       - 2025-12-19 References & Special Guest Aaron Luk: aufzeichnungen/2025-12-19/notes.md         

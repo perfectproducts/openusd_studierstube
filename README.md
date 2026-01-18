@@ -1,26 +1,61 @@
-# Willkommen zur [OpenUSD Studierstube](https://perfectproducts.github.io/openusd_studierstube/)! 🚀
+# Welcome to the OpenUSD Studierstube! 🚀
 
-Herzlich willkommen zur [**OpenUSD Studierstube**](https://perfectproducts.github.io/openusd_studierstube/) – eurer virtuellen Lernbegleitung für die [NVIDIA OpenUSD Zertifizierung](https://www.nvidia.com/en-us/learn/certification/openusd-development-professional/)!
+Welcome to the **OpenUSD Studierstube** — your virtual learning space for **[Universal Scene Description (OpenUSD)](https://docs.nvidia.com/learn-openusd/latest/what-openusd/index.html)**.
 
-![Studierstube Foto](./docs/assets/images/usd_studierstube.png)
+Together, we explore OpenUSD fundamentals and follow the official [**OpenUSD Learning Path**](https://docs.nvidia.com/learn-openusd/latest/index.html), preparing step by step for the [**NVIDIA OpenUSD Certification**](https://www.nvidia.com/en-us/learn/certification/openusd-development-professional/).
 
-## Was erwartet euch?
 
-Jeden **Freitag um 15:00 (CEST)** treffen wir uns in einer kompakten Teams-Session, um gemeinsam den kostenlosen [OpenUSD Learning Path](https://nvidia-omniverse.github.io/LearnOpenUSD/) zu erkunden. Wir nehmen uns pro Termin eine Episode vor, besprechen die wichtigsten Konzepte und beantworten eure Fragen.
 
-## Diese Website begleitet euch dabei
+![Studierstube photo](C:/_STASH/OpenUsd_Studierstube/docs/assets/images/usd_studierstube_2026.png)
 
-Diese Seite dient als euer digitaler Begleiter für die OpenUSD Studierstube:
+Whether you are just getting started or already working with OpenUSD, the Studierstube is a place to learn, discuss, and grow together.
 
-- **📚 Material & Ressourcen**: Zusätzliche Lernmaterialien und Links zum OpenUSD Learning Path
-- **🎥 Aufzeichnungen**: Die Aufzeichnungen unserer virtuellen Treffen zum Nachschauen
-- **❓ FAQ & Fragen**: Häufig gestellte Fragen und Antworten aus unseren Sessions
-- **📝 Notizen**: Zusammenfassungen und wichtige Erkenntnisse aus den Treffen
+## What to expect
 
-## Mitmachen ist einfach!
+Every **Friday at 3:00 PM (CEST)**, we meet for a short and focused **Microsoft Teams** session.
 
-Wenn du bei den virtuellen Treffen dabei sein möchtest, kommentiere einfach auf [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7372237621541904384/) mit **"OpenUSD Studierstube"** oder schreib eine [mail](mailto:michael.wagner@synctwin.ai).
+- We work through the **free [OpenUSD Learning Path](https://docs.nvidia.com/learn-openusd/latest/index.html) **together
+- Typically, we cover **one learning unit per session**
+- We discuss key concepts, practical implications, and open questions
+- Space is always left for **discussion, questions, and shared insights**
 
-## Bereit für die Zertifizierung?
+Everyone is welcome — curiosity matters more than prior knowledge.
 
-Gemeinsam schaffen wir das - hier gehts zur [Zertifizierung](https://www.nvidia.com/en-us/learn/certification/openusd-development-professional/) !
+## This website supports you
+
+- This website acts as your digital companion for the OpenUSD Studierstube:
+  - **📚 Materials & resources**
+    Curated links and additional material related to the OpenUSD Learning Path
+  - **🎥 Session recordings**
+    Watch past meetings anytime if you couldn’t attend live
+  - **❓ FAQ & questions**
+    Common questions and clarifications from our discussions
+  - **📝 Notes & summaries**
+    Key takeaways and condensed explanations from each session
+
+## Joining is easy!
+
+If you’d like to participate in the virtual sessions, simply:
+
+- send an [email](mailto:michael.wagner@synctwin.ai), or
+- comment **“OpenUSD Studierstube”** on this [LinkedIn post](https://www.linkedin.com/posts/michael-wagner-64873328_openusd-openusd-activity-7414293926477717504-uKqD?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXNntgBX0I_EUxYsKLGxp_RbdABWgS_Tw8)
+
+You’ll then receive the meeting details.
+
+![openusd_certificate_badge](C:\_STASH\OpenUsd_Studierstube\docs\assets\images\openusd_certificate_badge_small.png)
+
+!!! success "Ready for the certification?"
+
+We’ll get there together! The OpenUSD Studierstube makes it as easy as possible to get started with Universal Scene Description (USD). 
+
+Head to the [certification](https://www.nvidia.com/en-us/learn/certification/openusd-development-professional/).
+
+
+
+## What does “Studierstube” mean?
+
+“[Studierstube](https://de.wiktionary.org/wiki/Studierstube)” literally means *study room* - a somewhat old-fashioned German word.
+
+The group originally started in 2025 as a German-speaking study circle, and the name stuck.
+Due to growing interest from non-German speakers, we switched to **English in 2026**, while keeping the spirit:
+a focused, friendly space for learning together.
