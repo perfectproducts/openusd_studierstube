@@ -13,6 +13,8 @@ theme:
 nav:
   - Welcome: index.md
   - Recordings:
+    - 2026-01-30 Modelling Workstreams: recordings/2026-01-30/notes.md
+    - 2026-01-23 Asset Structure Principles (continued): recordings/2026-01-23/notes.md
     - 2026-01-16 Asset Structure Principles: recordings/2026-01-16/notes.md
     - 2026-01-09 Kickoff 2026: recordings/2026-01-09/notes.md
     - 2025-Archive (german):
