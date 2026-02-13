@@ -2,7 +2,7 @@
 
 ## Recording
 
-tbd
+[Recording](https://youtu.be/B0Nq-IDTAjk)
 
 ## Topics
 
