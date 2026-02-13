@@ -13,15 +13,16 @@ theme:
 nav:
   - Welcome: index.md
   - Recordings:
+    - 2026-02-06 Reference Payload Pattern: recordings/2026-02-06/notes.md
     - 2026-01-30 Modelling Workstreams: recordings/2026-01-30/notes.md
     - 2026-01-23 Asset Structure Principles (continued): recordings/2026-01-23/notes.md
     - 2026-01-16 Asset Structure Principles: recordings/2026-01-16/notes.md
     - 2026-01-09 Kickoff 2026: recordings/2026-01-09/notes.md
     - 2025-Archive (german):
-      - 2025-12-19 References & Special Guest Aaron Luk: aufzeichnungen/2025-12-19/notes.md         
-      - 2025-12-12 Use-Cases: aufzeichnungen/2025-12-12/notes.md     
-      - 2025-12-05 Scene Traversal: aufzeichnungen/2025-12-05/notes.md     
-      - 2025-11-28 Beyond the Basics: aufzeichnungen/2025-11-28/notes.md     
+      - 2025-12-19 References & Special Guest Aaron Luk: aufzeichnungen/2025-12-19/notes.md
+      - 2025-12-12 Use-Cases: aufzeichnungen/2025-12-12/notes.md
+      - 2025-12-05 Scene Traversal: aufzeichnungen/2025-12-05/notes.md
+      - 2025-11-28 Beyond the Basics: aufzeichnungen/2025-11-28/notes.md
       - 2025-11-07 Composition Übungen: aufzeichnungen/2025-11-07/notes.md
       - 2025-10-31 Composition Basics: aufzeichnungen/2025-10-31/notes.md
       - 2025-10-24 Scene Blueprints B: aufzeichnungen/2025-10-24/notes.md
@@ -31,8 +32,8 @@ nav:
       - 2025-09-26 Attributes: aufzeichnungen/2025-09-26/notes.md
       - 2025-09-19 Stages: aufzeichnungen/2025-09-19/notes.md
       - 2025-09-12 Einrichtung: aufzeichnungen/2025-09-12/notes.md
-    
-    
+
+
   - Learning Material: material.md
   - Tools: tools.md
   - About us: about.md
