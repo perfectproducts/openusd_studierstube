@@ -13,6 +13,8 @@ theme:
 nav:
   - Welcome: index.md
   - Recordings:
+    - 2026-02-20 Model Hierarchy: recordings/2026-02-20/notes.md
+    - 2026-02-13 (cancelled): recordings/2026-02-13/notes.md
     - 2026-02-06 Reference Payload Pattern: recordings/2026-02-06/notes.md
     - 2026-01-30 Modelling Workstreams: recordings/2026-01-30/notes.md
     - 2026-01-23 Asset Structure Principles (continued): recordings/2026-01-23/notes.md
