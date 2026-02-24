@@ -2,7 +2,7 @@
 
 ## Recording
 
-tbd
+[Recording](https://youtu.be/mmit95ts8ew)
 
 ## Topics
 
