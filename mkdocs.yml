@@ -13,6 +13,7 @@ theme:
 nav:
   - Welcome: index.md
   - Recordings:
+    - 2026-02-27 Developing Data Exchange Pipelines: recordings/2026-02-27/notes.md
     - 2026-02-20 Model Hierarchy: recordings/2026-02-20/notes.md
     - 2026-02-13 (cancelled): recordings/2026-02-13/notes.md
     - 2026-02-06 Reference Payload Pattern: recordings/2026-02-06/notes.md
