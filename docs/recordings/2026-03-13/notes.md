@@ -6,7 +6,9 @@
 
 ## Topics
 
-[Developing Data Exchange Pipelines](https://docs.nvidia.com/learn-openusd/latest/data-exchange/index.html)
+[Developing Data Exchange Pipelines - Extracting Materials](https://docs.nvidia.com/learn-openusd/latest/data-exchange/data-extraction/exercise-extracting-materials.html)
+
+
 
 
 
