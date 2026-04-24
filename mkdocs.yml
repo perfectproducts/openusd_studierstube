@@ -13,6 +13,7 @@ theme:
 nav:
   - Welcome: index.md
   - Recordings:
+    - 2026-04-17 Authoring Point Instancing: recordings/2026-04-17/notes.md
     - 2026-04-10 Authoring Scenegraph Instancing (continued): recordings/2026-04-10/notes.md
     - 2026-04-03 Authoring Scenegraph Instancing (continued): recordings/2026-04-03/notes.md
     - 2026-03-27 Authoring Scenegraph Instancing: recordings/2026-03-27/notes.md
