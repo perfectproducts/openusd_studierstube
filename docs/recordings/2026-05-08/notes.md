@@ -6,7 +6,7 @@
 
 ## Topics
 
-Introduction into the online book :
+Introduction to the online book :
 
 https://learn-usd.github.io/
 
