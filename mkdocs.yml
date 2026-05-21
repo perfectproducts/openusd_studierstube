@@ -13,7 +13,7 @@ theme:
 nav:
   - Welcome: index.md
   - Recordings:
-    - 2026-05-15 OpenUSD in a weekend continued: recordings/2026-05-22/notes.md
+    - 2026-05-15 OpenUSD in a weekend continued: recordings/2026-05-15/notes.md
     - 2026-05-08 Introduction - OpenUSD in a weekend: recordings/2026-05-08/notes.md
     - 2026-05-01 (Public Holiday): https://en.wikipedia.org/wiki/Labor_Day
     - 2026-04-24 Refining Point Instances: recordings/2026-04-24/notes.md
