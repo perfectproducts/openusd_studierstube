@@ -1,8 +1,8 @@
-# 2026-05-29 - OpenUSD in a Weekend Continued
+# 2026-06-12 - OpenUSD in a Weekend Continued
 
 ## Recording
 
-[Recording](https://youtu.be/KsoaDSNCO7I)
+[Recording](https://youtu.be/VSB6COUbOEM)
 
 ## Topics
 
