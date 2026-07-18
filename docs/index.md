@@ -12,7 +12,7 @@ Whether you are just getting started or already working with OpenUSD, the Studie
 
 ## What to expect
 
-Every **Friday at 3:00 PM (CEST)**, we meet for a live session in Discord: https://discord.com/invite/vQNV3XXVZ
+Every **Friday at 3:00 PM (CEST)**, we meet for a live session in [Discord](https://discord.com/invite/vQNV3XXVZ) .
 
 - We work through the **free [OpenUSD Learning Path](https://docs.nvidia.com/learn-openusd/latest/index.html) **together
 - Typically, we cover **one learning unit per session**
@@ -35,7 +35,7 @@ Everyone is welcome — curiosity matters more than prior knowledge.
 
 ## Joining is easy!
 
-If you’d like to participate in the virtual sessions, simply join on Discord: https://discord.com/invite/vQNV3XXVZ
+If you’d like to participate in the virtual sessions, simply join on [Discord](https://discord.com/invite/vQNV3XXVZ).
 
 
 
