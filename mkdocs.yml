@@ -13,6 +13,7 @@ theme:
 nav:
   - Welcome: index.md
   - Recordings:
+    - 2026-07-17 First Discord Session: recordings/2026-07-17/notes.md
     - 2026-06-19 OpenUSD in a weekend continued: recordings/2026-06-19/notes.md
     - 2026-06-12 OpenUSD in a weekend continued: recordings/2026-06-12/notes.md
     - 2026-06-05 OpenUSD in a weekend continued: recordings/2026-06-05/notes.md
