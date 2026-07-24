@@ -2,7 +2,9 @@
 
 ## Recording
 
-[Recording](tbd)
+[Recording](https://youtu.be/9jjthi7eins?si=odQWmECROx_80v7O)
+
+(first half is in german)
 
 ## Topics
 
