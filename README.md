@@ -12,14 +12,18 @@ Whether you are just getting started or already working with OpenUSD, the Studie
 
 ## What to expect
 
-Every **Friday at 3:00 PM (CEST)**, we meet for a short and focused **Microsoft Teams** session.
+Every **Friday at 3:00 PM (CEST)**, we meet for a live session in [Discord](https://discord.com/invite/nvidiaomniverse), [OpenUSD Studierstube Channel](https://discord.com/channels/827959428476174346/1532362789031510136) .
 
-- We work through the **free [OpenUSD Learning Path](https://docs.nvidia.com/learn-openusd/latest/index.html) **together
-- Typically, we cover **one learning unit per session**
-- We discuss key concepts, practical implications, and open questions
-- Space is always left for **discussion, questions, and shared insights**
+We started as a study group working through the official OpenUSD Learning Path to prepare for the OpenUSD Certification. Today, we also explore the wider OpenUSD ecosystem, including Digital Twins, Physical AI, and other topics enabled by OpenUSD.
 
-Everyone is welcome — curiosity matters more than prior knowledge.
+Together we:
+
+📚 Work through the OpenUSD Learning Path and other resources such as OpenUSD in a Weekend
+💬 Discuss OpenUSD, Digital Twins, Physical AI, and related technologies
+🛠️ Build projects and experiments
+🎨 Share our own OpenUSD work, demos, and discoveries
+
+Whether you're preparing for certification or simply interested in OpenUSD, you're welcome to learn and build with us.
 
 ## This website supports you
 
@@ -35,12 +39,9 @@ Everyone is welcome — curiosity matters more than prior knowledge.
 
 ## Joining is easy!
 
-If you’d like to participate in the virtual sessions, simply:
-
-- send an [email](mailto:michael.wagner@synctwin.ai), or
+If you’d like to participate in the virtual sessions, simply join the discord channel, send an [email](mailto:michael.wagner@synctwin.ai), or
 - comment **“OpenUSD Studierstube”** on this [LinkedIn post](https://www.linkedin.com/posts/michael-wagner-64873328_openusd-openusd-activity-7414293926477717504-uKqD?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXNntgBX0I_EUxYsKLGxp_RbdABWgS_Tw8)
 
-You’ll then receive the meeting details.
 
 ![openusd_certificate_badge](C:\_STASH\OpenUsd_Studierstube\docs\assets\images\openusd_certificate_badge_small.png)
 
