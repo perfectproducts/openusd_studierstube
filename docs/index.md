@@ -18,10 +18,12 @@ We started as a study group working through the official OpenUSD Learning Path t
 
 Together we:
 
-📚 Work through the OpenUSD Learning Path and other resources such as OpenUSD in a Weekend
-💬 Discuss OpenUSD, Digital Twins, Physical AI, and related technologies
-🛠️ Build projects and experiments
-🎨 Share our own OpenUSD work, demos, and discoveries
+- 📚 Work through the OpenUSD Learning Path and other resources such as OpenUSD in a Weekend
+- 💬 Discuss OpenUSD, Digital Twins, Physical AI, and related technologies
+- 🛠️ Build projects and experiments
+- 🎨 Share our own OpenUSD work, demos, and discoveries
+
+
 
 Whether you're preparing for certification or simply interested in OpenUSD, you're welcome to learn and build with us.
 
