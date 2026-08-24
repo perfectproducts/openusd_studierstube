@@ -12,7 +12,9 @@ Whether you are just getting started or already working with OpenUSD, the Studie
 
 ## What to expect
 
-Every **Friday at 3:00 PM (CEST)**, we meet for a live session in [Discord](https://discord.com/invite/nvidiaomniverse), [OpenUSD Studierstube Channel](https://discord.com/channels/827959428476174346/1532362789031510136) .
+Every **Friday at 3:00 PM (CEST)**, we meet for a live session in [Discord](https://discord.com/invite/nvidiaomniverse) in the [Community Room]( https://discord.gg/kHWypa7u ) 
+
+The Channel to Chat is here:  [OpenUSD Studierstube Channel](https://discord.com/channels/827959428476174346/1532362789031510136) .
 
 We started as a study group working through the official OpenUSD Learning Path to prepare for the OpenUSD Certification. Today, we also explore the wider OpenUSD ecosystem, including Digital Twins, Physical AI, and other topics enabled by OpenUSD.
 
@@ -22,6 +24,18 @@ Together we:
 - 💬 Discuss OpenUSD, Digital Twins, Physical AI, and related technologies
 - 🛠️ Build projects and experiments
 - 🎨 Share our own OpenUSD work, demos, and discoveries
+
+#### If you don't have access to the Community Room: 
+
+Attendees need to be verified members of the Omniverse Discord. If people just joined the Omniverse Discord for our study group, here’s the process:
+
+1. Complete the short questionnaire in Hashtag #apply-for-access (also in the Welcome category)
+
+2. Either Edmar or Amelia will approve them
+
+3. Once approved, pick your preferred roles in Hashtag⁠roles so you get relevant notifications
+
+   
 
 
 

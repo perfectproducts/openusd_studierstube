@@ -13,6 +13,7 @@ theme:
 nav:
   - Welcome: index.md
   - Recordings:
+    - 2026-08 Recordings Moved to Discord: recordings/recordings_now_on_discord/info.md
     - 2026-07-31 First Omniverse Discord Session: recordings/2026-07-31/notes.md
     - 2026-07-24 Point Instancing: recordings/2026-07-24/notes.md
     - 2026-07-17 First Discord Session: recordings/2026-07-17/notes.md
