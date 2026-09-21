@@ -1,0 +1,16 @@
+[project]
+name = "ovrtx-render-service"
+version = "0.1.0"
+description = "Minimal HTTP render service around NVIDIA ovrtx: queue USD render jobs, poll, download PNGs."
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "ovrtx==0.5.0.377615",
+    "ovstage==0.2.0.377349",
+    "fastapi>=0.115",
+    "uvicorn>=0.30",
+    "numpy>=2.0",
+    "pillow>=10.0",
+]
+
+[tool.uv]
+package = false
