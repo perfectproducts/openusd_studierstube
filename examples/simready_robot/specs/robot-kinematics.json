@@ -1,0 +1,134 @@
+{
+  "source": "https://my.kuka.com/s/product/kr-270-r2700-ultra/01t58000002hnigAAA?language=de&tab=Details (read 2026-09-21)",
+  "model": "KUKA KR 270 R2700 ultra (KR QUANTEC ultra, controller KR C4, discontinued)",
+  "datasheet": {
+    "rated_payload_kg": 270,
+    "max_reach_mm": 2696,
+    "axes": 6,
+    "mounting": "floor",
+    "repeatability_mm": 0.06,
+    "protection": "IP65 (in-line wrist IP65)"
+  },
+  "joints": [
+    {
+      "name": "A1",
+      "type": "revolute",
+      "parent": "k1",
+      "child": "k2",
+      "axis": "Z",
+      "pivot_mm": [
+        0,
+        0,
+        0
+      ],
+      "limits_deg": [
+        -185,
+        185
+      ],
+      "max_velocity_deg_s": 105
+    },
+    {
+      "name": "A2",
+      "type": "revolute",
+      "parent": "k2",
+      "child": "k3",
+      "axis": "Y",
+      "pivot_mm": [
+        350,
+        0,
+        675
+      ],
+      "limits_deg": [
+        -140,
+        -5
+      ],
+      "max_velocity_deg_s": 101
+    },
+    {
+      "name": "A3",
+      "type": "revolute",
+      "parent": "k3",
+      "child": "k4",
+      "axis": "Y",
+      "pivot_mm": [
+        350,
+        0,
+        1819
+      ],
+      "limits_deg": [
+        -120,
+        155
+      ],
+      "max_velocity_deg_s": 107
+    },
+    {
+      "name": "A4",
+      "type": "revolute",
+      "parent": "k4",
+      "child": "k5",
+      "axis": "X",
+      "pivot_mm": [
+        0,
+        0,
+        1785
+      ],
+      "limits_deg": [
+        -350,
+        350
+      ],
+      "max_velocity_deg_s": 122
+    },
+    {
+      "name": "A5",
+      "type": "revolute",
+      "parent": "k5",
+      "child": "k6",
+      "axis": "Y",
+      "pivot_mm": [
+        1550,
+        0,
+        1785
+      ],
+      "limits_deg": [
+        -122.5,
+        122.5
+      ],
+      "max_velocity_deg_s": 113
+    },
+    {
+      "name": "A6",
+      "type": "revolute",
+      "parent": "k6",
+      "child": "k7",
+      "axis": "X",
+      "pivot_mm": [
+        0,
+        0,
+        1785
+      ],
+      "limits_deg": [
+        -350,
+        350
+      ],
+      "max_velocity_deg_s": 175
+    }
+  ],
+  "fixed_links": {
+    "k1": "base frame (floor mounted)",
+    "k9": "counterbalance cylinder (passive, on rotating column k2)",
+    "k10": "counterbalance piston rod (passive, attached to link arm k3)"
+  },
+  "notes": [
+    "Stage units are mm (metersPerUnit 0.001), Z up; CAD is in KUKA home pose (A2=-90, A3=+90: link arm vertical, arm horizontal along +X).",
+    "Pivots fitted from geometry: A2/A3 axis caps k3/e2vc,k3/e1vc (circle r=34.5 at x=350, z=675/1819), A5 wrist hub on k6 (r=90 at x=1550, z=1785), A4/A6 from flange k7 (y=0, z=1785, flange face x=1790). Reach check 350+1144+1200.5=2694.5 mm vs datasheet 2696 mm. ax* frames in the CAD carry no usable orientation.",
+    "Datasheet angle sign convention is KUKA's; map to the USD joint frame when authoring limits."
+  ],
+  "cad_home_pose_deg": {
+    "A1": 0,
+    "A2": -90,
+    "A3": 90,
+    "A4": 0,
+    "A5": 0,
+    "A6": 0
+  }
+}

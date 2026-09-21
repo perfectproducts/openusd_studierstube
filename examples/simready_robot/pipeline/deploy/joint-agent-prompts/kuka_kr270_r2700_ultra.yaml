@@ -1,0 +1,66 @@
+# KUKA KR 270 R2700 ultra (KR QUANTEC ultra) - 6-DOF floor-mounted industrial arm.
+# Local prompt-library entry mounted into the Joint Agent container by
+# deploy/joint-agent.override.yml. Axis data: my.kuka.com product page
+# (output/kr270r2700ultra/pipeline/01_context/robot-kinematics.json).
+
+robot_id: kuka_kr270_r2700_ultra
+aliases:
+  - "kr270r2700ultra"
+  - "kr 270 r2700 ultra"
+  - "kr270 r2700 ultra"
+filename_aliases:
+  - "kr270r2700ultra"
+description: "KUKA KR 270 R2700 ultra (KR QUANTEC) - 6-DOF floor-mounted industrial serial arm, 7 links, 270 kg payload, 2696 mm reach"
+topology: serial_chain
+num_dofs: 6
+component_names:
+  - base
+  - a1_rotating_column
+  - a2_link_arm
+  - a3_arm
+  - a4_inline_wrist
+  - a5_wrist
+  - a6_flange
+visual_cues:
+  base: >-
+    CAD group k1. Fixed floor-mounted base frame at z=0, wide flat footprint
+    (~1 m x 0.8 m), grey; includes the A1 motor and cable connection box.
+  a1_rotating_column: >-
+    CAD group k2. Rotating column (carousel) sitting on the base, turns about
+    the vertical A1 axis through the base centre; carries the A2 gearbox
+    housing at about z=675 mm, x=350 mm and the counterbalance cylinder.
+  a2_link_arm: >-
+    CAD group k3. Long vertical link arm (~1150 mm) between the A2 axis
+    (z~675 mm) and the A3 axis (z~1819 mm), both horizontal along Y.
+  a3_arm: >-
+    CAD group k4. Horizontal arm housing the A3 motor and the A4/A5/A6 motors
+    at its rear, extending along +X towards the wrist.
+  a4_inline_wrist: >-
+    CAD group k5. Front part of the in-line wrist rotating about the arm's
+    long axis (A4, along X at z~1784 mm).
+  a5_wrist: >-
+    CAD group k6. Wrist housing that tilts about the A5 axis (along Y at
+    x~1575 mm).
+  a6_flange: >-
+    CAD group k7. Round mounting flange at the tip (x~1790 mm), rotates about
+    A6 (along X).
+tiebreakers:
+  - >-
+    Classify ONLY the direct child groups k1, k2, k3, k4, k5, k6, k7, k9 and
+    k10 of the asset; do NOT list their child prims (e1vc, e2vc, solid_0_*
+    names repeat under several groups and would be ambiguous).
+  - >-
+    Never output the asset root prim (kr270r2700ultra). Every entry must have
+    a non-null "segment" string taken from the component_name list.
+  - >-
+    k1..k7 map in order to base, a1_rotating_column, a2_link_arm, a3_arm,
+    a4_inline_wrist, a5_wrist, a6_flange. k9 (counterbalance cylinder) belongs
+    to a1_rotating_column; k10 (counterbalance piston rod) belongs to
+    a2_link_arm.
+  - >-
+    Use role "link" for k1..k7 and role "cap" for k9 and k10.
+completeness_required: true
+self_check: true
+notes: >-
+  Axis ranges A1 +-185, A2 -140/-5, A3 -120/+155, A4 +-350, A5 +-122.5,
+  A6 +-350 deg; speeds 105/101/107/122/113/175 deg/s (datasheet).
