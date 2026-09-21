@@ -1,0 +1,12 @@
+flowchart LR
+  C[Clients] -->|POST /render| API[FastAPI<br/>HTTP threads]
+  API --> Q[(Job store<br/>priority queue)]
+  Q --> W[Render worker<br/>owns ovrtx.Renderer]
+  W -->|PNG| D[(Output folder)]
+  C -->|GET /jobs/id/result| API
+  API --> D
+  class W accent
+  class Q,D store
+classDef accent fill:#FDEBDD,stroke:#C2410C,color:#7C2D12,stroke-width:1.5px
+classDef store fill:#E0EDFF,stroke:#1D4ED8,color:#1E3A8A,stroke-width:1.5px
+classDef agent fill:#E6F6EC,stroke:#15803D,color:#14532D,stroke-width:1.5px
