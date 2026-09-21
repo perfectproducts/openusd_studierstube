@@ -70,6 +70,8 @@ Joint Agent (research preview, `deploy_joint_agent_wsl.sh`) and only uses its ou
   (`--grasp-point x,y,z`, twice). The asset gate reports 18 dangling `over` prims from the conversion.
 - `reports/pipeline-report.md` is the snapshot from before the joints were added (it still shows the Joint Agent
   block). Conform/validate have not been rerun on the articulated layer.
+- Link masses are estimates: the Physics Agent's 746 kg total (the real robot is about 1170 kg) split by mesh
+  volume × predicted density. Check them against manufacturer data before using the asset for dynamics.
 - Drive gains are estimated from gravity load (the datasheet has no torques); rotation direction for A1/A4/A5/A6 is
   unverified.
 - The Joint Agent authored no joints in 5 runs. `pipeline/deploy/` holds the local prompt-library entry and a patched
