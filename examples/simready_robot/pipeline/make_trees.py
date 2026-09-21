@@ -94,15 +94,15 @@ before = [
 after = [
     (0, "kr270r2700ultra", "root", [("ArticulationRoot", "root")], ""),
     (1, "kr270r2700ultra", "xform", [], "42 meshes: material, collider, density"),
-    (2, "k1", "body", [("RigidBody 232.7 kg", "body")], "base"),
-    (2, "k2", "body", [("RigidBody 266.3 kg", "body")], "rotating column"),
-    (2, "k3", "body", [("RigidBody 105.5 kg", "body")], "link arm"),
-    (2, "k4", "body", [("RigidBody 112.3 kg", "body")], "arm"),
-    (2, "k5", "body", [("RigidBody 9.8 kg", "body")], "in-line wrist"),
-    (2, "k6", "body", [("RigidBody 12.2 kg", "body")], "wrist housing"),
-    (2, "k7", "body", [("RigidBody 3.3 kg", "body")], "flange"),
-    (2, "k9", "body", [("RigidBody 3.8 kg", "body")], "counterbalance cylinder"),
-    (2, "k10", "body", [("RigidBody 0.5 kg", "body")], "counterbalance rod"),
+    (2, "k1", "body", [("RigidBody est. 233 kg", "body")], "base"),
+    (2, "k2", "body", [("RigidBody est. 266 kg", "body")], "rotating column"),
+    (2, "k3", "body", [("RigidBody est. 106 kg", "body")], "link arm"),
+    (2, "k4", "body", [("RigidBody est. 112 kg", "body")], "arm"),
+    (2, "k5", "body", [("RigidBody est. 9.8 kg", "body")], "in-line wrist"),
+    (2, "k6", "body", [("RigidBody est. 12 kg", "body")], "wrist housing"),
+    (2, "k7", "body", [("RigidBody est. 3.3 kg", "body")], "flange"),
+    (2, "k9", "body", [("RigidBody est. 3.8 kg", "body")], "counterbalance cylinder"),
+    (2, "k10", "body", [("RigidBody est. 0.5 kg", "body")], "counterbalance rod"),
     (1, "PhysicsScene", "scope", [], ""),
     (1, "Joints", "scope", [], ""),
     (2, "base_fixed", "fixed", [("Fixed", "fixed"), ("", "axis")], ("world → k1", "")),
@@ -117,4 +117,4 @@ after = [
 ]
 if __name__ == "__main__":
     print(render("Before: the converted JT file", "Nine sibling part groups, no bodies, no joints", before, "tree_before.svg"))
-    print(render("After: the articulated SimReady asset", "Rigid bodies per link, joints A1–A6, fixed base, articulation root", after, "tree_after.svg"))
+    print(render("After: the articulated SimReady asset", "Rigid bodies per link (estimated masses), joints A1–A6, fixed base, articulation root", after, "tree_after.svg"))
