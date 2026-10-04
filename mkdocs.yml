@@ -58,12 +58,18 @@ nav:
     
 
 
+  - Examples:
+    - examples/index.md
+    - Agentic ABENE Modelling: examples/abene_agentic.md
   - Learning Material: material.md
   - Tools: tools.md
   - About us: about.md
 
 plugins:
   - search
+
+hooks:
+  - hooks/copy_examples.py
 
 markdown_extensions:
   - admonition
