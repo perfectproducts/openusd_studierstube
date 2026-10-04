@@ -1,0 +1,26 @@
+{
+  "source_asset_path": "testfiles/kr270r2700ultra.jt",
+  "local_identifiers": ["kr270r2700ultra", "KR 270 R2700 ultra"],
+  "web_queries": ["KUKA KR 270 R2700 ultra datasheet weight payload reach material"],
+  "evidence": [
+    {"url": "https://datasheets.globalspec.com/ds/1772/KUKADeutschlandGmbH/1C017EB8-77EC-44D4-80F7-5B15C543CE1F", "note": "KR 270 R2700 ultra (KR QUANTEC ultra) datasheet: 6-axis high-payload robot"},
+    {"url": "https://robodk.com/robot/KUKA/KR-270-R2700-ultra", "note": "270 kg payload, 2700 mm reach, ~1170 kg robot mass, +-0.06 mm repeatability"},
+    {"url": "https://www.kuka.com/en-us/products/robotics-systems/industrial-robots/kr-quantec", "note": "KR QUANTEC product family page"}
+  ],
+  "likely_identity": "KUKA KR 270 R2700 ultra, 6-axis floor-mounted industrial articulated robot (KR QUANTEC ultra series)",
+  "manufacturer": "KUKA Deutschland GmbH",
+  "product_family": "KR QUANTEC ultra (high payload)",
+  "application": "Material handling, spot welding, machine loading of loads up to 270 kg",
+  "material_hints": [
+    "Inferred: arm links, rocker/carousel and base are cast metal (cast aluminium alloy / cast steel/iron) finished in glossy KUKA orange industrial paint",
+    "Inferred: axis motors and gearbox covers are dark grey/black painted metal; base frame may be black or dark grey",
+    "Inferred: counterbalance cylinder has polished/chromed steel rod and painted steel housing; cable harness in black rubber/plastic"
+  ],
+  "physics_hints": [
+    "Evidence: total robot mass ~1170 kg",
+    "Inferred: rigid metal links; heavy cast base; treat as rigid bodies with metal density (steel ~7850 kg/m3 for base/gear parts, cast aluminium ~2700 kg/m3 for lighter arm castings), metal-on-metal friction ~0.4-0.6, low restitution",
+    "JT source has no joint definitions; articulation not authored by conversion"
+  ],
+  "confidence": "high for identity (exact model name in filename matches KUKA catalogue); medium for material breakdown (inferred from product imagery conventions)",
+  "material_physics_prompt": "KUKA KR 270 R2700 ultra 6-axis industrial robot arm (KR QUANTEC ultra, total mass ~1170 kg, 270 kg payload, 2.7 m reach). Main arm links, rotating column and base are cast metal painted glossy KUKA orange; axis motors, gearbox covers and base plate are dark grey/black painted metal; counterbalance has a chromed steel rod; cable harness is black rubber/plastic. Physics: rigid metal parts, steel/cast iron density for base and gear parts, cast aluminium density for arm castings, metal friction ~0.5, low restitution; floor-mounted heavy machine."
+}

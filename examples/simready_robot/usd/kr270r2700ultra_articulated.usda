@@ -1,0 +1,269 @@
+#usda 1.0
+(
+    defaultPrim = "kr270r2700ultra"
+    metersPerUnit = 0.001
+    subLayers = [
+        @./kr270r2700ultra_material_physics.usd@
+    ]
+    upAxis = "Z"
+)
+
+over "kr270r2700ultra" (
+    delete apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+    prepend apiSchemas = ["PhysicsArticulationRootAPI"]
+)
+{
+    over "kr270r2700ultra"
+    {
+        over "k1" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float physics:mass = 232.67336
+        }
+
+        over "k2" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float physics:mass = 266.30396
+        }
+
+        over "k3" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float physics:mass = 105.51266
+        }
+
+        over "k4" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float physics:mass = 112.33223
+        }
+
+        over "k5" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float physics:mass = 9.760377
+        }
+
+        over "k6" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float physics:mass = 12.155482
+        }
+
+        over "k7" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float physics:mass = 3.2632031
+        }
+
+        over "k9" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysicsFilteredPairsAPI"]
+        )
+        {
+            rel physics:filteredPairs = [
+                </kr270r2700ultra/kr270r2700ultra/k3>,
+                </kr270r2700ultra/kr270r2700ultra/k10>,
+            ]
+            float physics:mass = 3.818649
+        }
+
+        over "k10" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysicsFilteredPairsAPI"]
+        )
+        {
+            rel physics:filteredPairs = </kr270r2700ultra/kr270r2700ultra/k2>
+            float physics:mass = 0.46858442
+        }
+    }
+
+    def Scope "Joints"
+    {
+        def PhysicsFixedJoint "base_fixed"
+        {
+            rel physics:body1 = </kr270r2700ultra/kr270r2700ultra/k1>
+            point3f physics:localPos0 = (0, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsRevoluteJoint "A1" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular", "PhysxJointAPI"]
+        )
+        {
+            custom float2 cad2simready:datasheetLimitsDeg = (-185, 185)
+            custom float cad2simready:datasheetSign = 1
+            custom float cad2simready:homePoseDeg = 0
+            float drive:angular:physics:damping = 1745329300
+            float drive:angular:physics:stiffness = 34906583000
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "Z"
+            rel physics:body0 = </kr270r2700ultra/kr270r2700ultra/k1>
+            rel physics:body1 = </kr270r2700ultra/kr270r2700ultra/k2>
+            point3f physics:localPos0 = (0, 0, 0)
+            point3f physics:localPos1 = (0, 2000, 30)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -185
+            float physics:upperLimit = 185
+            custom float physxJoint:maxJointVelocity = 105
+            custom float state:angular:physics:position = 0
+            custom float state:angular:physics:velocity = 0
+        }
+
+        def PhysicsRevoluteJoint "A2" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular", "PhysxJointAPI"]
+        )
+        {
+            custom float2 cad2simready:datasheetLimitsDeg = (-140, -5)
+            custom float cad2simready:datasheetSign = 1
+            custom float cad2simready:homePoseDeg = -90
+            float drive:angular:physics:damping = 4363323000
+            float drive:angular:physics:stiffness = 87266460000
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "Y"
+            rel physics:body0 = </kr270r2700ultra/kr270r2700ultra/k2>
+            rel physics:body1 = </kr270r2700ultra/kr270r2700ultra/k3>
+            point3f physics:localPos0 = (350, 2000, 705)
+            point3f physics:localPos1 = (349.99997, 2000, 675)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -50
+            float physics:upperLimit = 85
+            custom float physxJoint:maxJointVelocity = 101
+            custom float state:angular:physics:position = 0
+            custom float state:angular:physics:velocity = 0
+        }
+
+        def PhysicsRevoluteJoint "A3" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular", "PhysxJointAPI"]
+        )
+        {
+            custom float2 cad2simready:datasheetLimitsDeg = (-120, 155)
+            custom float cad2simready:datasheetSign = 1
+            custom float cad2simready:homePoseDeg = 90
+            float drive:angular:physics:damping = 2617994000
+            float drive:angular:physics:stiffness = 52359877000
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "Y"
+            rel physics:body0 = </kr270r2700ultra/kr270r2700ultra/k3>
+            rel physics:body1 = </kr270r2700ultra/kr270r2700ultra/k4>
+            point3f physics:localPos0 = (349.99997, 2000, 1819)
+            point3f physics:localPos1 = (350.0003, 2000, 1819)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -210
+            float physics:upperLimit = 65
+            custom float physxJoint:maxJointVelocity = 107
+            custom float state:angular:physics:position = 0
+            custom float state:angular:physics:velocity = 0
+        }
+
+        def PhysicsRevoluteJoint "A4" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular", "PhysxJointAPI"]
+        )
+        {
+            custom float2 cad2simready:datasheetLimitsDeg = (-350, 350)
+            custom float cad2simready:datasheetSign = 1
+            custom float cad2simready:homePoseDeg = 0
+            float drive:angular:physics:damping = 261799400
+            float drive:angular:physics:stiffness = 5235988000
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "X"
+            rel physics:body0 = </kr270r2700ultra/kr270r2700ultra/k4>
+            rel physics:body1 = </kr270r2700ultra/kr270r2700ultra/k5>
+            point3f physics:localPos0 = (0.0002949785, 2000, 1785)
+            point3f physics:localPos1 = (200.00026, 2000, 1984.9999)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -350
+            float physics:upperLimit = 350
+            custom float physxJoint:maxJointVelocity = 122
+            custom float state:angular:physics:position = 0
+            custom float state:angular:physics:velocity = 0
+        }
+
+        def PhysicsRevoluteJoint "A5" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular", "PhysxJointAPI"]
+        )
+        {
+            custom float2 cad2simready:datasheetLimitsDeg = (-122.5, 122.5)
+            custom float cad2simready:datasheetSign = 1
+            custom float cad2simready:homePoseDeg = 0
+            float drive:angular:physics:damping = 261799400
+            float drive:angular:physics:stiffness = 5235988000
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "Y"
+            rel physics:body0 = </kr270r2700ultra/kr270r2700ultra/k5>
+            rel physics:body1 = </kr270r2700ultra/kr270r2700ultra/k6>
+            point3f physics:localPos0 = (1750.0002, 2000, 1984.9999)
+            point3f physics:localPos1 = (1750.0002, 2000, 1984.9999)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -122.5
+            float physics:upperLimit = 122.5
+            custom float physxJoint:maxJointVelocity = 113
+            custom float state:angular:physics:position = 0
+            custom float state:angular:physics:velocity = 0
+        }
+
+        def PhysicsRevoluteJoint "A6" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular", "PhysxJointAPI"]
+        )
+        {
+            custom float2 cad2simready:datasheetLimitsDeg = (-350, 350)
+            custom float cad2simready:datasheetSign = 1
+            custom float cad2simready:homePoseDeg = 0
+            float drive:angular:physics:damping = 87266460
+            float drive:angular:physics:stiffness = 1745329300
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "X"
+            rel physics:body0 = </kr270r2700ultra/kr270r2700ultra/k6>
+            rel physics:body1 = </kr270r2700ultra/kr270r2700ultra/k7>
+            point3f physics:localPos0 = (200.00026, 2000, 1984.9999)
+            point3f physics:localPos1 = (0.00023394334, 0.00048828125, 1784.9999)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -350
+            float physics:upperLimit = 350
+            custom float physxJoint:maxJointVelocity = 175
+            custom float state:angular:physics:position = 0
+            custom float state:angular:physics:velocity = 0
+        }
+
+        def PhysicsFixedJoint "k9_fixed"
+        {
+            rel physics:body0 = </kr270r2700ultra/kr270r2700ultra/k2>
+            rel physics:body1 = </kr270r2700ultra/kr270r2700ultra/k9>
+            point3f physics:localPos0 = (0.00052714406, 2000, 30.000364)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "k10_fixed"
+        {
+            rel physics:body0 = </kr270r2700ultra/kr270r2700ultra/k3>
+            rel physics:body1 = </kr270r2700ultra/kr270r2700ultra/k10>
+            point3f physics:localPos0 = (-0.0005512403, 2000, 0.00021264935)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+    }
+}
+

@@ -1,0 +1,35 @@
+# Local override for content-agents apps/joint_agent_service/docker-compose.yml
+# - host port 8400 (8000 is taken by the native Windows ovrtx Render Service)
+# - OpenAI models: NVIDIA-hosted gemma times out / rejects >4 images; several Joint Agent steps
+#   hardcode temperature 0.1/0.3, which gpt-5.x rejects; gpt-4.1 has only 30k TPM on this key,
+#   so per-part VLM predictions use gpt-4.1-mini (200k TPM) with bounded concurrency
+# - render through ovrtx_adapter.py on the Windows host
+# - prompt library: local KR 270 entry + defaults.py patch so JA_USE_PROMPT_LIBRARY/JA_ROBOT_ID
+#   switch it on (upstream hard-codes use_prompt_library=False and ignores user_prompt there)
+services:
+  joint-agent-service:
+    ports: !override
+      - "${JA_HOST_PORT:-8400}:8000"
+    environment:
+      - JA_VLM_BACKEND=${JA_VLM_BACKEND:-openai}
+      - JA_VLM_MODEL=${JA_VLM_MODEL:-gpt-4.1-mini}
+      - JA_VLM_MAX_WORKERS=${JA_VLM_MAX_WORKERS:-4}
+      - JA_LLM_BACKEND=${JA_LLM_BACKEND:-openai}
+      - JA_LLM_MODEL=${JA_LLM_MODEL:-gpt-4.1}
+      - JA_RENDER_BACKEND=remote
+      - RENDER_ENDPOINT=${RENDER_ENDPOINT:-http://host.docker.internal:8001}
+      - JA_USE_PROMPT_LIBRARY=${JA_USE_PROMPT_LIBRARY:-true}
+      - JA_ROBOT_ID=${JA_ROBOT_ID:-}
+    volumes:
+      - ${CAD2SIMREADY_DEPLOY_DIR}/joint-agent-prompts/kuka_kr270_r2700_ultra.yaml:/app/apps/joint_agent/joint_agent/prompts/data/kuka_kr270_r2700_ultra.yaml:ro
+      - ${CAD2SIMREADY_DEPLOY_DIR}/joint-agent-patches/defaults.py:/app/apps/joint_agent/joint_agent/api/defaults.py:ro
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    deploy:
+      resources:
+        limits:
+          cpus: '8'
+          memory: 16G
+        reservations:
+          cpus: '2'
+          memory: 4G

@@ -1,0 +1,7 @@
+KUKA KR 270 R2700 ultra - CAD model (JT)
+
+The original JT file is not included in this repository.
+Download it from KUKA:
+https://my.kuka.com/s/product/kr-270-r2700-ultra/01t58000002hnigAAA?language=de&tab=Downloads
+
+Save it as model/kr270r2700ultra.jt to reproduce the example.
