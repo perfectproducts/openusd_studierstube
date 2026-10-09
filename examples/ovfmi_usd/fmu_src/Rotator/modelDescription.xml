@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fmiModelDescription
+  fmiVersion="2.0"
+  modelName="Rotator"
+  description="A rotation angle that advances with an angular speed and a constant angular acceleration, with an on/off switch"
+  guid="{DDB23E2B-68A2-4972-B5E7-953827D35CD7}"
+  numberOfEventIndicators="0">
+
+  <CoSimulation
+    modelIdentifier="Rotator"
+    canHandleVariableCommunicationStepSize="true"
+    canNotUseMemoryManagementFunctions="true"
+    canGetAndSetFMUstate="true"
+    canSerializeFMUstate="true">
+    <SourceFiles>
+      <File name="all.c"/>
+    </SourceFiles>
+  </CoSimulation>
+
+  <UnitDefinitions>
+    <Unit name="deg">
+      <BaseUnit rad="1" factor="0.017453292519943295"/>
+    </Unit>
+    <Unit name="deg/s">
+      <BaseUnit rad="1" s="-1" factor="0.017453292519943295"/>
+    </Unit>
+    <Unit name="deg/s2">
+      <BaseUnit rad="1" s="-2" factor="0.017453292519943295"/>
+    </Unit>
+  </UnitDefinitions>
+
+  <TypeDefinitions>
+    <SimpleType name="Angle">
+      <Real quantity="Angle" unit="deg"/>
+    </SimpleType>
+    <SimpleType name="AngularVelocity">
+      <Real quantity="AngularVelocity" unit="deg/s"/>
+    </SimpleType>
+    <SimpleType name="AngularAcceleration">
+      <Real quantity="AngularAcceleration" unit="deg/s2"/>
+    </SimpleType>
+  </TypeDefinitions>
+
+  <LogCategories>
+    <Category name="logStatusError" description="Log error messages"/>
+  </LogCategories>
+
+  <DefaultExperiment startTime="0" stopTime="10" stepSize="1e-2"/>
+
+  <ModelVariables>
+    <ScalarVariable name="time" valueReference="0" causality="independent" variability="continuous" description="Simulation time">
+      <Real/>
+    </ScalarVariable>
+    <ScalarVariable name="angle" valueReference="1" causality="output" variability="continuous" initial="exact" description="Rotation angle, not wrapped">
+      <Real start="0" declaredType="Angle"/>
+    </ScalarVariable>
+    <ScalarVariable name="der(angle)" valueReference="2" causality="local" variability="continuous" initial="calculated" description="Derivative of angle">
+      <Real derivative="2" declaredType="AngularVelocity"/>
+    </ScalarVariable>
+    <ScalarVariable name="ramp" valueReference="3" causality="local" variability="continuous" initial="exact" description="Angular velocity gained from the acceleration">
+      <Real start="0" declaredType="AngularVelocity"/>
+    </ScalarVariable>
+    <ScalarVariable name="der(ramp)" valueReference="4" causality="local" variability="continuous" initial="calculated" description="Derivative of ramp">
+      <Real derivative="4" declaredType="AngularAcceleration"/>
+    </ScalarVariable>
+    <ScalarVariable name="omega" valueReference="5" causality="output" variability="continuous" initial="calculated" description="Current angular velocity, speed + ramp">
+      <Real declaredType="AngularVelocity"/>
+    </ScalarVariable>
+    <ScalarVariable name="speed" valueReference="6" causality="input" variability="continuous" description="Angular speed">
+      <Real start="90" declaredType="AngularVelocity"/>
+    </ScalarVariable>
+    <ScalarVariable name="acceleration" valueReference="7" causality="input" variability="continuous" description="Constant angular acceleration, adds to the speed over time">
+      <Real start="0" declaredType="AngularAcceleration"/>
+    </ScalarVariable>
+    <ScalarVariable name="enabled" valueReference="8" causality="input" variability="discrete" description="Rotation on/off; off freezes angle and ramp">
+      <Boolean start="true"/>
+    </ScalarVariable>
+  </ModelVariables>
+
+  <ModelStructure>
+    <Outputs>
+      <Unknown index="2" dependencies=""/>
+      <Unknown index="6" dependencies="4 7" dependenciesKind="dependent dependent"/>
+    </Outputs>
+    <Derivatives>
+      <Unknown index="3" dependencies="4 7 9" dependenciesKind="dependent dependent dependent"/>
+      <Unknown index="5" dependencies="8 9" dependenciesKind="dependent dependent"/>
+    </Derivatives>
+    <InitialUnknowns>
+      <Unknown index="3" dependencies="4 7 9" dependenciesKind="dependent dependent dependent"/>
+      <Unknown index="5" dependencies="8 9" dependenciesKind="dependent dependent"/>
+      <Unknown index="6" dependencies="4 7" dependenciesKind="dependent dependent"/>
+    </InitialUnknowns>
+  </ModelStructure>
+
+</fmiModelDescription>

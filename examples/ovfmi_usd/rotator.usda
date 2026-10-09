@@ -1,0 +1,92 @@
+#usda 1.0
+(
+    defaultPrim = "World"
+    metersPerUnit = 1
+    upAxis = "Y"
+    doc = """Rotator FMU (FMI 2.0) mapped onto an OpenUSD rotating box with ovfmi.
+
+    FMU variable           direction          OpenUSD attribute on /World/Rotor
+    --------------------   ----------------   ---------------------------------
+    angle  (output, deg)   FMU -> USD         xformOp:rotateXYZ  (y component)
+    omega  (output, deg/s) FMU -> USD         sim:omega
+    speed  (input, deg/s)  USD -> FMU         sim:speed
+    acceleration (input, deg/s2)
+                           USD -> FMU         sim:acceleration   (omega = speed + acceleration * t)
+    enabled (input, bool)  USD -> FMU         sim:enabled        (false freezes the rotation)
+
+    ovfmi applies every input mapping each step, so the attributes act as levels, not events."""
+)
+
+def Xform "World"
+{
+    def Cube "Rotor"
+    {
+        double size = 1
+        double3 xformOp:scale = (1.6, 0.2, 0.4)
+
+        # Driven by the FMU: output angle in degrees, not wrapped.
+        double3 xformOp:rotateXYZ = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:rotateXYZ", "xformOp:scale"]
+
+        # Driven by the FMU: output omega.
+        double sim:omega = 90
+
+        # Read by the FMU: inputs.
+        double sim:speed = 90
+        double sim:acceleration = 0
+        bool sim:enabled = 1
+    }
+}
+
+def FmuInstance "RotatorFmu"
+{
+    bool fmi:enabled = 1
+    asset fmi:fmu = @./fmus/Rotator.fmu@
+
+    def FmuConnection "RotorConnection"
+    {
+        rel fmi:targets = </World/Rotor>
+
+        # (1, 1) on the double3 rotation writes only y, like the height in bouncing_ball.usda.
+        def FmuMapping "AngleToRotateXYZ"
+        {
+            token fmi:direction = "output"
+            token fmi:fmuAttribute = "angle"
+            int2 fmi:usdMapping = (1, 1)
+            token fmi:usdAttribute = "xformOp:rotateXYZ"
+        }
+
+        # Scalar attributes: (0, 1) covers the single component.
+        def FmuMapping "OmegaOut"
+        {
+            token fmi:direction = "output"
+            token fmi:fmuAttribute = "omega"
+            int2 fmi:usdMapping = (0, 1)
+            token fmi:usdAttribute = "sim:omega"
+        }
+
+        def FmuMapping "SpeedIn"
+        {
+            token fmi:direction = "input"
+            token fmi:fmuAttribute = "speed"
+            int2 fmi:usdMapping = (0, 1)
+            token fmi:usdAttribute = "sim:speed"
+        }
+
+        def FmuMapping "AccelerationIn"
+        {
+            token fmi:direction = "input"
+            token fmi:fmuAttribute = "acceleration"
+            int2 fmi:usdMapping = (0, 1)
+            token fmi:usdAttribute = "sim:acceleration"
+        }
+
+        def FmuMapping "EnabledIn"
+        {
+            token fmi:direction = "input"
+            token fmi:fmuAttribute = "enabled"
+            int2 fmi:usdMapping = (0, 1)
+            token fmi:usdAttribute = "sim:enabled"
+        }
+    }
+}

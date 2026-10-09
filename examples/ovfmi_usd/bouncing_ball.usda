@@ -1,0 +1,76 @@
+#usda 1.0
+(
+    defaultPrim = "World"
+    metersPerUnit = 1
+    upAxis = "Y"
+    doc = """BouncingBall FMU (FMI 2.0) mapped onto an OpenUSD ball with ovfmi.
+
+    FMU variable          direction          OpenUSD attribute on /World/Ball
+    -------------------   ----------------   ---------------------------------
+    h   (output, m)       FMU -> USD         xformOp:translate   (y component)
+    v   (output, m/s)     FMU -> USD         sim:velocity
+    e   (parameter, 0.5..1, tunable)
+                          USD -> FMU         sim:restitution
+
+    Not mapped: g (fixed parameter, -9.81), v_min (constant), time, der(h), der(v)."""
+)
+
+def Xform "World"
+{
+    def Sphere "Ball"
+    {
+        double radius = 0.1
+
+        # Driven by the FMU: output h overwrites the y component each step.
+        double3 xformOp:translate = (0, 1, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+
+        # Driven by the FMU: output v, free for UI, audio, motion blur, ...
+        double sim:velocity = 0
+
+        # Read by the FMU: input e. Edit this value on the stage to change the bounce.
+        double sim:restitution = 0.7
+    }
+}
+
+# The FMU instance lives next to the scene it drives, not inside it.
+def FmuInstance "BouncingBallFmu"
+{
+    bool fmi:enabled = 1
+    asset fmi:fmu = @./fmus/BouncingBall.fmu@
+
+    # One connection per set of target prims. Every mapping below is applied to each target.
+    def FmuConnection "BallConnection"
+    {
+        rel fmi:targets = </World/Ball>
+
+        # fmi:direction = "output": FMU -> USD.
+        # fmi:usdMapping = (first, last) component range written into the attribute value.
+        # (1, 1) on a double3 writes only y; x and z keep their authored values.
+        def FmuMapping "HeightToY"
+        {
+            token fmi:direction = "output"
+            token fmi:fmuAttribute = "h"
+            int2 fmi:usdMapping = (1, 1)
+            token fmi:usdAttribute = "xformOp:translate"
+        }
+
+        # Scalar attribute: (0, 1) covers its single component.
+        def FmuMapping "VelocityOut"
+        {
+            token fmi:direction = "output"
+            token fmi:fmuAttribute = "v"
+            int2 fmi:usdMapping = (0, 1)
+            token fmi:usdAttribute = "sim:velocity"
+        }
+
+        # fmi:direction = "input": USD -> FMU.
+        def FmuMapping "RestitutionIn"
+        {
+            token fmi:direction = "input"
+            token fmi:fmuAttribute = "e"
+            int2 fmi:usdMapping = (0, 1)
+            token fmi:usdAttribute = "sim:restitution"
+        }
+    }
+}
