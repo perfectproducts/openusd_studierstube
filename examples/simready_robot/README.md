@@ -36,7 +36,12 @@ Open `usd/kr270r2700ultra_articulated.usda` in any UsdPhysics-aware app, press p
 ## Geometry complexity: JT vs. OpenUSD
 
 The JT counts come from the file's own scene graph (per-shape counts in the LOD nodes); the OpenUSD counts come from the
-composed stage.
+composed stage. Reproduce with `pipeline/geometry_stats.py` (needs `usd-core` and `numpy`):
+
+```powershell
+cd pipeline
+py -3.12 geometry_stats.py ..\model\kr270r2700ultra.jt ..\usd\kr270r2700ultra_converted.usd ..\usd\kr270r2700ultra_articulated.usda
+```
 
 | | JT (`kr270r2700ultra.jt`) | Converted OpenUSD | Final OpenUSD (articulated + material/physics) |
 |---|---|---|---|
