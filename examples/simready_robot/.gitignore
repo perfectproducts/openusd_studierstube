@@ -1,0 +1,6 @@
+# KUKA JT is not redistributable, download it (see model/kr270r2700ultra.jt.txt)
+model/*.jt
+# pipeline run directory (cad2simready.py --output-root default)
+pipeline/output/
+__pycache__/
+.venv/

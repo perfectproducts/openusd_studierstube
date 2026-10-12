@@ -60,7 +60,7 @@ python author_robot_drives.py output\kr270r2700ultra\pipeline\04_assign\physics\
 py -3.12 cad2simready.py ..\model\kr270r2700ultra.jt --from conform
 ```
 
-`author_robot_drives.py` needs `usd-core` and `numpy`. `cad2simready.py --joints` additionally submits the asset to the
+`author_robot_drives.py` needs `usd-core` and `numpy` (`pip install -r requirements.txt`). `cad2simready.py --joints` additionally submits the asset to the
 Joint Agent (research preview, `deploy_joint_agent_wsl.sh`) and only uses its output as a cross-check.
 
 ## Status and known gaps
