@@ -33,6 +33,37 @@ The articulated asset in USD Composer, joint A2 selected (revolute about Y, k2 �
 
 Open `usd/kr270r2700ultra_articulated.usda` in any UsdPhysics-aware app, press play and drive the joint targets.
 
+## Geometry complexity: JT vs. OpenUSD
+
+The JT counts come from the file's own scene graph (per-shape counts in the LOD nodes); the OpenUSD counts come from the
+composed stage.
+
+| | JT (`kr270r2700ultra.jt`) | Converted OpenUSD | Final OpenUSD (articulated + material/physics) |
+|---|---|---|---|
+| Format / size | JT 9.5, 4.82 MB | binary `.usd`, 5.66 MB | 5.70 MB + 11 KB `.usda` over-layer |
+| B-Rep | none, tessellation only | – | – |
+| Structure | 51 parts, 49 instances, 51 range-LOD nodes | 71 prims, 51 instanced prototypes | 449 prims, de-instanced |
+| Meshed parts | 42 shapes | 42 meshes | 42 meshes |
+| LOD levels | 5 | 1 | 1 |
+| Triangles | LOD0 247,793 · LOD1 126,801 · LOD2 21,662 · LOD3 3,728 · LOD4 691 | 228,529 | 228,529 |
+| Vertices | 412,611 (LOD0 strip vertices) | 307,440 | 307,440 (118,719 unique positions) |
+| Surface area | 11,558,300 mm² | – | 11,558,153 mm² |
+| Curves | 9 polyline shapes | dropped | dropped |
+| Physics geometry | – | – | 42 convex-hull colliders, 6 revolute + 3 fixed joints |
+
+- The converter keeps only LOD0: the surface area matches to 0.001 %. Per part the OpenUSD triangle count is 91–95 % of
+  the JT LOD0 count (e.g. 60,660 → 55,946 on the largest part), most likely because the degenerate triangles that
+  stitch JT triangle strips are dropped. Only 2 zero-area triangles remain.
+- The four coarser LODs (51 %, 9 %, 1.5 %, 0.3 % of LOD0) are lost, so every consumer renders all 228k triangles.
+- Vertices are split along hard edges for vertex-interpolated normals (307k points for 119k positions).
+- The material/physics step removes the instancing of the converted file; no part geometry is actually shared, so this
+  costs little here.
+- 1,705 triangles are smaller than 0.01 mm² (fillets, threads).
+- Physics does not use the render mesh: one convex hull per mesh.
+
+Possible improvements: a lighter render variant from JT LOD1 (127k triangles) or LOD2 (22k), and face-varying normals so
+the points can be welded (≈119k instead of 307k).
+
 ## Reproduce
 
 Prerequisites: NVIDIA GPU, Docker (Desktop + WSL2 on Windows), Python 3.12, `uv`, a coding agent with the skill
