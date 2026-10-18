@@ -13,6 +13,9 @@ MP4 or a GIF.
 | `render_video.py` | Render a `.png`, `.mp4` or `.gif` with ovrtx, with the renderer clock kept on stage time |
 | `pyproject.toml` | Pinned `ovrtx` / `ovstage`, plus `pillow` and `imageio-ffmpeg` for the output |
 | `images/` | Sample render |
+| `SKILL.md` | Agent skill `ovrtx-video-textures`: this folder's know-how for Claude Code and other agents |
+
+To use it as a skill, copy this folder to `~/.claude/skills/ovrtx-video-textures/` (or a project's `.claude/skills/`).
 
 ## The material
 
