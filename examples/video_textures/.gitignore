@@ -1,0 +1,5 @@
+.venv/
+_output/
+/*.png
+/*.gif
+/*.mp4
